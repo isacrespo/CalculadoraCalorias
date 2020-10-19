@@ -1,0 +1,637 @@
+/*  Reseteamos los estilos propios de cada navegador */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* Reset para navegadores anteriores */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.content-input input,
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+.content-input input{
+	visibility: hidden;
+	position: absolute;
+	right: 0;
+}
+
+/* Empieza nuestro CSS */
+/* Desktop */
+
+:root {
+  --yellow: #ffb901;
+  --gris: #413f3f;
+  --texto: 'Work Sans', sans-serif;
+  --titulo: 'Fredoka One', cursive;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.8;
+  font-family: var(--texto);
+}
+
+/* Estilos de cabecera */
+.cabecera {
+  min-height: 300px;
+  text-align: center;
+}
+
+.lineaInicioCabecera {
+  background-color: var(--yellow);
+  height: 10px;
+  top: 0px;
+  border: none;
+}
+
+.lineaFinCabecera {
+  background-color: var(--yellow);
+  height: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.tituloCabecera {
+  font-family: var(--titulo);
+  font-size: 40px;
+  letter-spacing: 1rem;
+  margin-top: 40px;
+  color: var(--gris);
+}
+
+.subtituloCabecera {
+  font-family: var(--texto);
+  font-size: 20px;
+  letter-spacing: 0px;
+}
+
+/* Estilos del Formulario */
+.contenedorFormulario {
+  display: flex;
+  flex-direction: column;
+  padding-left: 17.2%;
+  padding-right: 17.2%;
+}
+
+.primeraLineaFormulario {
+  display: flex;
+  justify-content: space-between;
+  min-height: 300px;
+}
+
+.datosFormulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.1), -0.7em -0.5em 1em rgba(0, 0, 0, 0.1);
+  width: 22%;
+}
+
+.tituloDatosFormulario {
+  font-family: var(--titulo);
+  font-size: 20px;
+  letter-spacing: 0.2rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: var(--gris);
+}
+
+/* Input Edad - Altura - Peso */
+.botonDatosFormulario input {
+  margin-top: 20px;
+  font-family: var(--texto);
+  font-size: 42px;
+  text-align: center;
+  width: 90px;
+  border-bottom: 2px solid var(--yellow);
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  outline: none;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+/* Botones Hombre - Mujer */
+.botonSexoDatosFormulario {
+  display:flex;
+  justify-content: flex-start;
+  position: absolute;
+  margin-left: -25px;
+  margin-top: 220px;
+}
+
+.segundaLineaFormulario {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.1), -0.7em -0.5em 1em rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  min-height: 300px;
+}
+
+.tituloDatosFactor {
+  display: flex;
+  justify-content: center;
+  font-family: var(--titulo);
+  font-size: 20px;
+  letter-spacing: 0.2rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: var(--gris);
+}
+
+.datosFactorActividad {
+  display: flex;
+  justify-content: center;
+}
+
+.datosFactor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 19%;
+}
+
+.imagenDatosFactor {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.botonDatosFactor {
+  display: flex;
+  justify-content: space-around;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.content-input{
+	position: relative;
+	padding: 0 0 0 50px;
+	display: block;
+}
+
+.content-input input + i{
+ border: 0.5px solid var(--gris);
+ position: absolute;
+ left: 0;
+ top: 0;
+}
+
+.content-input input[type=radio] + i{
+ height: 16px;
+ width: 16px;
+ border-radius: 100%;
+ left: 26px;
+ top: 6px;
+}
+
+.content-input input[type=radio] + i:before{
+	content: '';
+	display: block;
+	height: 9px;
+	width: 9px;
+	border-radius: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 3px;
+	left: 3px;
+	background-color: var(--yellow);
+	transition: all 0.25s ease;
+	transform: scale(0);
+	opacity: 0;
+}
+
+.content-input input[type=radio]:checked + i:before{
+	transform: scale(1);
+	opacity: 1;
+}
+
+.content-input:hover input[type=radio]:not(:checked) + i{
+  transition-duration: 1s;
+  transform: translate(0, -5px);
+}
+
+/* Ultima linea botón Calcular / Volver */
+.botonesFormulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 10px 50px 10px;
+  height: 100px;
+}
+
+.botonesFormulario a {
+  text-decoration: none;
+  padding: 9px 0px 9px 0px;
+  font-size: 1rem;
+}
+
+.botonesFormulario a:hover {
+  opacity: 1;
+}
+
+.botonCalcular {
+  border: 2px solid var(--yellow);
+  border-bottom: 5px solid var(--yellow);
+  border-right: 3px solid var(--yellow);
+  background-color: transparent;
+  color: var(--yellow);
+  padding: 0.75em 5em;
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--texto);
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.botonCalcular:hover  {
+  border: 2px solid var(--yellow);
+  border-bottom: 5px solid var(--yellow);
+  border-right: 3px solid var(--yellow);
+  background-color: var(--gris);
+  color: var(--yellow);
+  transition-duration: 1s;
+  transform: translate(0, -10px);
+}
+
+/* Estilos para mostrar los Resultados */
+.primeraLineaResultados {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.1), -0.7em -0.5em 1em rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  min-height: 300px;
+}
+
+.tituloResultados {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--titulo);
+  font-size: 20px;
+  letter-spacing: 0.2rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: var(--gris);
+}
+
+.textoResultado {
+  font-family: var(--titulo);
+  color: var(--gris);
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.segundaLineaResultados {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.1), -0.7em -0.5em 1em rgba(0, 0, 0, 0.1);
+  min-height: 300px;
+}
+
+.datosResultados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.gridReparto {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(4, 40px);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-bottom: 50px;
+}
+
+.tituloVolDef {
+  font-size: 1.1em;
+  font-weight: bold;
+  border-bottom: 2px solid var(--yellow);
+  border-top: 2px solid var(--yellow);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.tituloPGC {
+  border-radius: 20px;
+  background-color: var(--yellow);
+  text-align: center;
+  padding: 0.25em;
+}
+
+.rdoReparto {
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/* Estilos para mostrar el Error */
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: -50px 17.2% 50px 17.2%;
+  padding: 2em 4em 2em 4em;
+  background-color: var(--yellow);
+  color: var(--gris);
+}
+
+.fa-bomb {
+  font-size: 2em;
+}
+
+.errorTitulo {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.errorTexto {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.errorTexto span {
+  font-weight: bold;
+}
+
+/* Estilos Footer */
+.fa-github,
+.fa-behance-square,
+.fa-linkedin,
+.fa-instagram {
+  color: var(--yellow);
+  margin-right: 25px;
+  font-size: 2rem;
+}
+
+.footer {
+  background-color: var(--gris);
+  padding: 2em 80px 2em 80px;
+  width: 100%;
+  font-size: 80%;
+  min-height: 30px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.inner-footer {
+  color: #ffffff;
+}
+
+.inner-footer img {
+  margin-left: 7px;
+  margin-right: 25px;
+}
+
+.inner-footer img:hover,
+a:hover {
+  opacity: 0.4;
+}
+
+/* Responsive: cuando la pantalla tenga 1400px o menos */
+@media screen and (max-width: 1400px) {
+  .contenedorFormulario {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  .error {
+    margin: -50px 7% 50px 7%;
+    padding: 2em 2em 2em 2em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .botonSexoDatosFormulario {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .tituloCabecera {
+    font-size: 30px;
+    letter-spacing: 0.5rem;
+    margin-top: 40px;
+    line-height: 50px;
+  }
+
+  .subtituloCabecera {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .datosFactorActividad {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .datosFactor {
+    width: 100%;
+  }
+
+  .datosResultados {
+    width: 100%;
+  }
+
+  .botonDatosFactor {
+    align-self: center;
+    margin-bottom: 20px;
+  }
+
+  .primeraLineaFormulario {
+    flex-direction: column;
+  }
+
+  .datosFormulario {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .tituloDatosFormulario {
+    margin: 0 10px 0 0;
+  }
+
+  .botonDatosFormulario input {
+    margin: 0 0 0 10px;
+  }
+
+  .botonSexoDatosFormulario {
+    position:relative;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .errorTitulo {
+    line-height: 26px;
+  }
+
+  .gridReparto {
+    grid-template-columns: repeat(3, 110px);
+    grid-column-gap: 10px;
+  }
+
+  .fa-github,
+  .fa-behance-square,
+  .fa-linkedin,
+  .fa-instagram {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    padding: 2em 20px 2em 40px;
+  }
+}
